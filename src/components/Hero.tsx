@@ -25,8 +25,9 @@ const Hero = () => {
         {/* text-content */}
         <div className="w-[46%] flex flex-col justify-evenly">
           <div className="text-4xl xl:text-6xl font-bold">
-            <h1>We Provide the</h1>
-            <h1>best food for you</h1>
+            <h1>We Serve the</h1>
+            <h1><span className="text-[#EA6D27]">finest flavors</span> for</h1>
+            <h1>your taste buds</h1>
           </div>
           <div className="">
             <p className="w-[80%] tracking-wider text-lg">
@@ -55,8 +56,8 @@ const Hero = () => {
           <img
             src={heroImg1}
             alt="hero-image"
-            className="relative w-[460px] z-10 " 
-          />  
+            className="relative w-[460px] z-10 "
+          />
           <img
             src={heroImg2}
             alt="hero-image-small"
@@ -64,9 +65,9 @@ const Hero = () => {
           />
           {/* background images */}
           <div className="">
-            <img src={bgImg1} className="absolute -top-20 -left-40 w-[400px]"/>
-            <img src={bgImg2} className="absolute -top-20 -right-36"/>
-            <img src={bgImg3} className="absolute bottom-0 -right-40"/>
+            <img src={bgImg1} className="absolute -top-20 -left-40 w-[400px]" />
+            <img src={bgImg2} className="absolute -top-20 -right-36" />
+            <img src={bgImg3} className="absolute bottom-0 -right-40" />
           </div>
         </div>
       </div>
