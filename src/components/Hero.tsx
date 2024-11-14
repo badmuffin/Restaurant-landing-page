@@ -12,7 +12,7 @@ import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
-    <section className="bg-gray-100 w-full min-h-screen">
+    <section className=" w-full min-h-screen">
       <Navbar />
       {/* circle designs */}
       <div className="relative">
@@ -20,6 +20,7 @@ const Hero = () => {
         <div className="absolute -top-[300px] -left-52 border border-gray-500 rounded-full h-[640px] w-[640px]"></div>
         <div className="absolute -top-[320px] -left-36 border border-gray-500 rounded-full h-[630px] w-[630px]"></div>
       </div>
+
       {/* content */}
       <div className="flex justify-between px-10 lg:px-20 xl:px-44 py-40 overflow-hidden">
         {/* text-content */}

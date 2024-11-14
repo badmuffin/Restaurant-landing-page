@@ -5,7 +5,10 @@ import tofuImg from "../assets/image/tofu.png";
 import FoodCard from "./FoodCard";
 
 import imgLeft from "../assets/bg-img/bg-img-2.png";
-import imgRight from "../assets/bg-img/bg-img-3.png"
+import imgRight from "../assets/bg-img/bg-img-3.png";
+import bgImg4 from "../assets/bg-img/bg-img-4.png";
+import bgImg5 from "../assets/bg-img/bg-img-5.png";
+import bgImg6 from "../assets/bg-img/bg-img-6.png";
 
 const SpecialDishes = () => {
   const mockApi = [
@@ -27,17 +30,28 @@ const SpecialDishes = () => {
     {
       img: eggImg,
       title: "Egg and Cocumber",
-      desc: "Refreshing egg and cucumber dish, light and flavorful.",
+      desc: "Refreshing egg and cucumber dish, light and flavorful for you.",
     },
   ];
 
   return (
-    <section className="relative min-h-screen bg-gray-200 px-10 lg:px-20 xl:px-44 pt-32">
+    <section className="relative min-h-screen bg-gray-100 px-10 lg:px-20 xl:px-44 pt-32">
+      <div className="flex ">
+        <div className="absolute bottom-[5rem] left-[24rem]">
+          <img src={bgImg4} />
+        </div>
+        <div className="flex gap-20 absolute bottom-[5rem] right-[8rem]">
+          <img src={bgImg5} className=" w-[100px] rotate-[20deg]" />
+          <img src={bgImg6} />
+        </div>
+      </div>
+
       <div className=" flex flex-col justify-between items-center mx-auto text-center">
         <div className="absolute top-14 flex gap-96 overflow-hidden">
           <img className="w-[240px] h-[210px]" src={imgLeft} />
           <img className="w-[180px] h-[250px] -rotate-[10deg]" src={imgRight} />
         </div>
+        {/* title and subtitles */}
         <h1 className="text-6xl font-bold">
           Our <span className="text-[#EA6D27]">Special</span> Dishes
         </h1>
@@ -48,7 +62,7 @@ const SpecialDishes = () => {
         </p>
       </div>
       <div className="flex justify-center items-center">
-        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-x-[100px] pb-10">
+        <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-x-[100px] pb-10 z-10">
           {/* all the four cards */}
           {mockApi.map((data) => (
             <FoodCard img={data.img} title={data.title} desc={data.desc} />
