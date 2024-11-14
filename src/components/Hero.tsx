@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="flex justify-between px-10 lg:px-20 xl:px-44 py-40 overflow-hidden">
         {/* text-content */}
         <div className="w-[46%] flex flex-col justify-evenly">
-          <div className="text-4xl xl:text-6xl font-bold">
+          <div className="text-4xl xl:text-6xl font-bold z-10">
             <h1>We Serve the</h1>
             <h1><span className="text-[#EA6D27]">finest flavors</span> for</h1>
             <h1>your taste buds</h1>
@@ -37,10 +37,10 @@ const Hero = () => {
               experience
             </p>
             <div className="py-8">
-              <button className="bg-[#101A24] px-6 py-3 mr-4 border rounded-tl-xl rounded-br-xl text-white text-lg">
+              <button className="bg-[#101A24] px-6 py-3 mr-3 border rounded-tl-xl rounded-br-xl text-white text-lg">
                 Menu
               </button>
-              <button className="bg-[#EA6D27] px-6 py-3 ml-4 border border-transparent rounded-tl-xl rounded-br-xl text-white text-lg">
+              <button className="bg-[#EA6D27] px-6 py-3 ml-3 border border-transparent rounded-tl-xl rounded-br-xl text-white text-lg">
                 Book a table
               </button>
             </div>
@@ -57,7 +57,7 @@ const Hero = () => {
           <img
             src={heroImg1}
             alt="hero-image"
-            className="relative w-[460px] z-10 "
+            className="relative w-[400px] z-10 "
           />
           <img
             src={heroImg2}
@@ -67,8 +67,8 @@ const Hero = () => {
           {/* background images */}
           <div className="">
             <img src={bgImg1} className="absolute -top-20 -left-40 w-[400px]" />
-            <img src={bgImg2} className="absolute -top-20 -right-36" />
-            <img src={bgImg3} className="absolute bottom-0 -right-40" />
+            <img src={bgImg2} className="absolute -top-20 -right-36 w-[260px]" />
+            <img src={bgImg3} className="absolute bottom-0 -right-40 w-[240px]" />
           </div>
         </div>
       </div>
