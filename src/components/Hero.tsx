@@ -8,7 +8,7 @@ import instagram from "../assets/icons/instagram.png";
 import bgImg1 from "../assets/bg-img/bg-img-1.png";
 import bgImg2 from "../assets/bg-img/bg-img-2.png";
 import bgImg3 from "../assets/bg-img/bg-img-3.png";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
