@@ -1,19 +1,11 @@
-import cafeBg from "../assets/image/cafe.png";
-
 const Newsletter = () => {
   return (
-    <div className="relative max-w-[600px] lg:max-w-[1000px] mx-auto z-10 min-h-[400px] border rounded-[40px]">
-      <img src={cafeBg} className="absolute object-cover rounded-[40px] -z-10" />
-      <div className="flex items-center justify-center mt-10">
-        <div className="flex justify-center items-center w-full max-w-md">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="flex-1 w-full px-4 py-2 pr-24 border border-gray-300 rounded-md "
-          />
-          <button className="px-4 py-2 text-white bg-[#EA6D27] rounded-lg">
-            Send
-          </button>
+    <div className="max-w-[600px] h-[400px] lg:max-w-[1000px] bg-[url('assets/image/cafe.png')] mx-auto z-10 min-h-[400px] border rounded-[40px]">
+      <div className="flex h-[400px] gap-4 flex-col justify-center items-center">
+        <p className="text-5xl text-gray-200 font-bold text-center w-[70%]">Get a Promo Code by Subscribing to our Newsletter.</p>
+        <div className="relative flex justify-center items-center">
+          <input type="text" placeholder="Enter your email" className="px-16 py-6 rounded-3xl"/>
+          <button className="absolute right-0 block bg-[#EA6D27] px-6 py-4 m-2 rounded-full">Send</button>
         </div>
       </div>
     </div>
