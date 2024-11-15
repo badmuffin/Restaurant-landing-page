@@ -11,15 +11,15 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-between items-center px-10 lg:px-32 xl:px-40 py-8 min-w-full">
+    <nav className="z-20 flex justify-between items-center px-10 lg:px-32 xl:px-40 py-8 min-w-full">
       {/* logo */}
-      <div>
+      <div className="hover:cursor-pointer">
         <img src={logo} width={160} alt="logo" />
       </div>
       {/* navlinks */}
-      <div className="flex justify-center text-sm">
+      <div className="flex justify-center text-base">
         {navlinks.map((navlink, idx) => (
-          <li key={idx} className="flex px-4">
+          <li key={idx} className="flex px-4 hover:cursor-pointer hover:text-[#EA6D27] duration-150">
             {navlink.title}
           </li>
         ))}

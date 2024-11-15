@@ -9,7 +9,7 @@ interface FoodCard {
 
 const FoodCard: React.FC<FoodCard> = ({ img, title, desc }) => {
   return (
-    <div className="w-[17rem] min-h-[400px] pt-32 pb-20">
+    <div className="w-[17rem] min-h-[400px] py-10 md:pt-32 md:pb-20">
       <div className=" relative">
         <img src={img} className="absolute -top-[100px] left-[22px]"/>
         <img src={priceImg} className="absolute -top-[60px] left-[160px]" />

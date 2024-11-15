@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="">
         <img src={mag} alt="footer-background-img" className=" absolute bottom-0 left-[18rem]" />
       </div>
-      <div className="flex justify-between">
+      <div className="px-6 flex flex-col md:flex-row justify-between">
         <div className="flex flex-col justify-between items-start w-[420px]">
           <img src={logo} width={200} />
           <p className="py-4 text-gray-700">
@@ -28,38 +28,38 @@ const Footer = () => {
             <span className=" underline">Learn More</span>
           </p>
           <div>
-            <p className="py-8 font-bold">Opening Hours</p>
-            <div className="flex">
-              <p className="pr-2">
-                <h1>Monday - Friday</h1>
+            <p className="pt-8 pb-4 font-bold">Opening Hours</p>
+            <div className="flex gap-2 flex-col md:flex-row">
+              <p className="md:pr-2">
+                <h1 className="font-medium">Monday - Friday</h1>
                 <h1>8:00 am to 8:00 pm</h1>
               </p>
-              <p className="px-3">
-                <h1>Saturday</h1>
+              <p className="md:px-3">
+                <h1 className="font-medium">Saturday</h1>
                 <h1>9:00 am to 9:00 pm</h1>
               </p>
-              <p className="pl-2">
-                <h1>Sunday</h1>
+              <p className="md:pl-2">
+                <h1 className="font-medium">Sunday</h1>
                 <h1>CLOSED</h1>
               </p>
             </div>
           </div>
         </div>
         <div>
-          <p className="font-bold pb-2">Navigation</p>
+          <p className="font-bold mt-4 ">Navigation</p>
           {navigations.map((navigation, idx) => (
-            <p key={idx} className="py-2">{navigation}</p>
+            <p key={idx} className="py-1">{navigation}</p>
           ))}
         </div>
         <div>
-          <p className="font-bold pb-2">Dishes</p>
+          <p className="font-bold mt-2">Dishes</p>
           {dishes.map((dish, idx) => (
-            <p key={idx} className="py-2">{dish}</p>
+            <p key={idx} className="py-1">{dish}</p>
           ))}
         </div>
         <div>
-          <p className="font-bold pb-2">Follow Us</p>
-          <div className="flex justify-evenly">
+          <p className="font-bold mt-2">Follow Us</p>
+          <div className="flex justify-start md:justify-evenly">
             <img src={facebook} className="mr-2"/>
             <img src={instagram} className="mr-2" />
             <img src={twitter} />
@@ -67,8 +67,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="border border-t-gray-500 my-4"></div>
-      <div className="flex justify-between py-4">
-        <div>© 2022 Restaurants. All Right Reserved. Designed by Isaac</div>
+      <div className="flex gap-2 flex-col md:flex-row justify-between py-4 px-2">
+        <div>© 2022 Restaurants. <span className="block">All Right Reserved. Designed by Isaac</span></div>
         <div className="flex">
           <p className="pr-4">Terms of service</p>
           <p>Privacy Policy</p>

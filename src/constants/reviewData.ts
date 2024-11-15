@@ -12,7 +12,7 @@ interface ReviewData {
 export const reviewData: ReviewData[] = [
   {
     img: profile1,
-    review: "This restaurant exceeded all my expectations! The food was incredibly fresh and bursting with flavor, and the staff was so attentive and welcoming. It iss a place I will recommend to friends and definitely visit again. A fantastic experience!",
+    review: "This restaurant exceeded all my expectations! The food was incredibly fresh and bursting with flavor, and the staff was so attentive and welcoming. It iss a place I will recommend to friends and definitely visit again.",
     name: "Mark Wood",
     title: "Software Developer",
   },

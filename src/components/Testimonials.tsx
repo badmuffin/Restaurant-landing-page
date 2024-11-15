@@ -25,14 +25,14 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="relative min-h-[120vh] bg-[#F3F4F4] px-10 lg:px-20 xl:px-44 pt-32">
+    <section className="relative min-h-[120vh] bg-[#F3F4F4] px-6 md:px-10 lg:px-20 xl:px-44 pt-32">
       <img src={mag} className="absolute top-32 -left-60 rotate-90" />
       <div className=" flex flex-col justify-between items-center mx-auto text-center">
         {/* title and subtitles */}
-        <p className="text-6xl font-bold">
+        <p className="text-4xl md:text-6xl font-bold">
           Our <span className="text-[#EA6D27]">Happy</span> Customers
         </p>
-        <p className="w-[500px] text-lg tracking-wider py-10 ">
+        <p className="w-[80%] md:w-[500px] text-lg tracking-wider py-10 ">
           Hear from our delighted guests! Discover how our dedication to flavor,
           quality, and service has created memorable experiences for each
           visitor.
@@ -46,7 +46,7 @@ const Testimonials = () => {
           autoPlay={true}
           swipeable={true}
           removeArrowOnDeviceType={["tablet", "mobile"]}
-          transitionDuration={1000}
+          transitionDuration={2000}
         >
           {reviewData.map((data, idx) => (
             <TestimonialCard

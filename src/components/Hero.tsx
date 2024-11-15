@@ -13,25 +13,28 @@ import Navbar from "./Navbar";
 const Hero = () => {
   return (
     <section className=" w-full min-h-screen">
-      <Navbar />
+      {/* <Navbar /> */}
+
       {/* circle designs */}
-      <div className="relative">
-        <div className="absolute -top-[360px] -left-40 border border-gray-500 rounded-full h-[620px] w-[620px]"></div>
-        <div className="absolute -top-[300px] -left-52 border border-gray-500 rounded-full h-[640px] w-[640px]"></div>
-        <div className="absolute -top-[320px] -left-36 border border-gray-500 rounded-full h-[630px] w-[630px]"></div>
+      <div className="relative -z-10">
+        <div className="absolute -top-[260px] lg:-top-[360px] -left-[140px] lg:-left-[160px] border border-gray-500 rounded-full h-[400px] w-[400px] lg:h-[620px] lg:w-[620px]"></div>
+        <div className="absolute -top-[280px] lg:-top-[300px] -left-[108px] lg:-left-[208px] border border-gray-500 rounded-full h-[400px] w-[400px] lg:h-[640px] lg:w-[640px]"></div>
+        <div className="absolute -top-[320px] -left-[90px] lg:-left-[144px] border border-gray-500 rounded-full h-[400px] w-[400px] lg:h-[630px] lg:w-[630px]"></div>
       </div>
 
       {/* content */}
-      <div className="flex justify-between px-10 lg:px-20 xl:px-44 py-40 overflow-hidden">
+      <div className="flex flex-col gap-12 md:gap-20 lg:flex-row justify-between px-6 lg:px-20 xl:px-44 py-40 overflow-hidden ">
         {/* text-content */}
-        <div className="w-[46%] flex flex-col justify-evenly">
-          <div className="text-4xl xl:text-6xl font-bold z-10">
+        <div className="w-full lg:w-[46%] flex flex-col justify-center items-center gap-6">
+          <div className="text-4xl text-center lg:text-6xl font-bold z-10">
             <h1>We Serve the</h1>
-            <h1><span className="text-[#EA6D27]">finest flavors</span> for</h1>
+            <h1>
+              <span className="text-[#EA6D27]">finest flavors</span> for
+            </h1>
             <h1>your taste buds</h1>
           </div>
-          <div className="">
-            <p className="w-[80%] tracking-wider text-lg">
+          <div className="flex flex-col justify-center items-center">
+            <p className="w-[80%] tracking-wider text-lg text-center">
               Discover fresh, delicious meals cooked with quality ingredients
               and delivered straight to your table for a satisfying dining
               experience
@@ -46,7 +49,7 @@ const Hero = () => {
             </div>
           </div>
           {/* social media icons */}
-          <div className="flex justify-between w-[34%]">
+          <div className="flex justify-between w-1/2 md:w-[34%]">
             <img src={facebook} />
             <img src={instagram} />
             <img src={twitter} />
@@ -57,18 +60,24 @@ const Hero = () => {
           <img
             src={heroImg1}
             alt="hero-image"
-            className="relative w-[400px] z-10 "
+            className="relative mx-auto w-[300px] lg:w-[400px] z-10 "
           />
           <img
             src={heroImg2}
             alt="hero-image-small"
-            className="w-[350px] absolute z-10 bottom-0 -left-60"
+            className="hidden lg:visible w-[350px] absolute z-10 bottom-0 -left-60"
           />
           {/* background images */}
           <div className="">
-            <img src={bgImg1} className="absolute -top-20 -left-40 w-[400px]" />
-            <img src={bgImg2} className="absolute -top-20 -right-36 w-[260px]" />
-            <img src={bgImg3} className="absolute bottom-0 -right-40 w-[240px]" />
+            <img src={bgImg1} className="absolute -top-20 -left-40 w-[300px] md:w-[400px]" />
+            <img
+              src={bgImg2}
+              className="absolute -top-20 -right-10 md:-right-36 w-[160px] md:w-[260px]"
+            />
+            <img
+              src={bgImg3}
+              className="absolute bottom-0 -right-10 md:-right-40 w-[140px] md:w-[240px]"
+            />
           </div>
         </div>
       </div>
