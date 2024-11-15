@@ -11,7 +11,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="z-20 flex justify-between items-center px-10 lg:px-32 xl:px-40 py-8 min-w-full">
+    <nav className="z-20 flex flex-col md:flex-row justify-between items-center px-10 lg:px-32 xl:px-40 py-8 min-w-full">
       {/* logo */}
       <div className="hover:cursor-pointer">
         <img src={logo} width={160} alt="logo" />

@@ -65,7 +65,7 @@ const Hero = () => {
           <img
             src={heroImg2}
             alt="hero-image-small"
-            className="hidden lg:visible w-[350px] absolute z-10 bottom-0 -left-60"
+            className="max-sm:hidden w-[350px] absolute z-10 bottom-0 -left-60"
           />
           {/* background images */}
           <div className="">

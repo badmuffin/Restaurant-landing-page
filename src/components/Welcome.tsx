@@ -13,7 +13,7 @@ const Welcome = () => {
   return (
     <section className="w-full relative min-h-[80vh] bg-gray-100 px-10 lg:px-20 xl:px-44 pt-32 pb-36">
       <div className="overflow-hidden">
-        <img src={bgImg7} className="absolute -top-10 md:-top-20 left-10 md:left-[640px] w-[200px] md:w-[300px]" />
+        <img src={bgImg7} className="absolute -top-10 lg:-top-20 left-10 lg:left-[640px] w-[200px] lg:w-[300px]" />
         <img src={bgImg9} className="absolute right-0 bottom-20 w-[200px] md:w-[300px] " />
       </div>
 

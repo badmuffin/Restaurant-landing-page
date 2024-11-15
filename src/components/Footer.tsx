@@ -14,31 +14,13 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative min-h-[70vh] bg-green-50 lg:px-20 xl:px-44 pt-[17rem] pb-40">
-      {/* newsletter section */}
-      <div className="absolute -top-60 left-[16%] max-w-[600px] h-[400px] lg:max-w-[1000px] bg-[url('assets/image/cafe.png')] mx-auto z-10 min-h-[400px] border rounded-[40px]">
-        <div className="flex h-[400px] gap-4 flex-col justify-center items-center">
-          <p className="text-5xl text-gray-200 font-bold text-center w-[70%]">
-            Get a Promo Code by Subscribing to our Newsletter.
-          </p>
-          <div className="relative flex justify-center items-center">
-            <input
-              type="text"
-              placeholder="Enter your email"
-              className="px-16 py-6 rounded-3xl"
-            />
-            <button className="absolute right-0 block bg-[#EA6D27] px-6 py-4 m-2 rounded-full">
-              Send
-            </button>
-          </div>
-        </div>
-      </div>
+    <footer className="relative min-h-[100vh] bg-green-50 lg:px-20 xl:px-44 py-40">
 
       <div className="">
         <img
           src={mag}
           alt="footer-background-img"
-          className=" absolute bottom-0 left-[18rem]"
+          className=" absolute bottom-0 left-0"
         />
       </div>
       <div className="px-6 flex flex-col md:flex-row justify-between">

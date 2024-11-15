@@ -38,7 +38,7 @@ const Testimonials = () => {
           visitor.
         </p>
       </div>
-      <div className="w-full">
+      <div className="w-full pb-40">
         <Carousel
           responsive={responsive}
           infinite={true}
